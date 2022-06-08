@@ -1,0 +1,87 @@
+.rental {
+  width: 100%;
+  max-width: 1221px;
+  margin: 0 auto;
+  padding: 25px 0 100px;
+}
+
+.rental__header {
+  font: 700 30px/24px Roboto;
+  color: #232833;
+  margin-bottom: 29px;
+}
+
+.rental-main__img {
+  display: flex;
+}
+
+.rental-main__left-block {
+  width: 90px;
+  height: 79px;
+  margin-bottom: 10px;
+  background-color: #2d2c37;
+  cursor: pointer;
+}
+
+.rental-main__left-block img {
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+}
+
+.rental-main__img-right {
+  position: relative;
+  margin-left: 10px;
+}
+
+.rental-main__right-main {
+  position: relative;
+  z-index: 9;
+}
+
+.rental-main__right-rectangle {
+  position: absolute;
+  top: 21px;
+  left: 20px;
+  z-index: 0;
+}
+
+.rental-list {
+  display: flex;
+  margin: 50px 0 0 0;
+  padding: 0;
+}
+
+.rental-list__item {
+  font: 500 18px/20px Roboto;
+  color: #232833;
+  list-style: none;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.rental-list__item:hover {
+  color: #de2d42;
+}
+
+.rental-list__item-active {
+  color: #de2d42;
+}
+
+.rental-info hr {
+  color: #ebebeb;
+  background-color: #ebebeb;
+  border: 0 none;
+  height: 1px;
+  margin: 15px 0 20px;
+}
+
+.rental-list__text {
+  display: none;
+  font: 400 16px/22px Roboto;
+  color: #232833;
+}
+
+.rental-list__text-active {
+  display: block;
+}
