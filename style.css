@@ -85,3 +85,38 @@
 .rental-list__text-active {
   display: block;
 }
+
+.rental-main__block {
+  display: flex;
+}
+
+.rental-main__contacts {
+  margin-left: 44px;
+}
+
+.rental-contacts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rental-contacts__block {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+.rental-contacts__block-img {
+  margin-right: 10px;
+}
+
+.rental-contacts__block-text {
+  font: 500 18px/21px Roboto;
+  color: #232833;
+}
+
+.rental-contacts__block-text_small {
+  display: flex;
+  font: 400 16px/21px Roboto;
+  color: #aaaaaa;
+}
