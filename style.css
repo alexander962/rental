@@ -94,7 +94,7 @@
   margin-left: 44px;
 }
 
-.rental-contacts {
+.rental-contacts__info {
   display: flex;
   flex-wrap: wrap;
 }
@@ -119,4 +119,77 @@
   display: flex;
   font: 400 16px/21px Roboto;
   color: #aaaaaa;
+}
+
+.rental-contacts {
+  display: flex;
+  align-items: center;
+  font: 500 16px/24px Roboto;
+  color: #232833;
+  margin-bottom: 35px;
+}
+
+.rental-contacts__phone a {
+  font: 500 16px/24px Roboto;
+  color: #232833;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.rental-contacts__email a {
+  font: 500 16px/24px Roboto;
+  color: #232833;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.rental-contacts__phone {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.rental-contacts__email {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.rental-contacts__soc a:first-child {
+  margin-right: 15px;
+}
+
+.rental-steps {
+  display: flex;
+  align-items: flex-end;
+}
+
+.rental-steps__arrow {
+  margin: 0 4px 14px 4px;
+}
+
+.rental-steps__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rental-steps__block a {
+  display: block;
+  width: 190px;
+  padding: 4px 30px 4px;
+  font: 400 13px/16px Roboto;
+  text-decoration: underline;
+  color: #232833;
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 16px;
+}
+
+.rental-steps__block-active a {
+  text-decoration: none;
+  color: #232833;
+  background-color: #f1f1f1;
 }
