@@ -1,8 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
 .rental {
   width: 100%;
   max-width: 1221px;
   margin: 0 auto;
   padding: 25px 0 100px;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .rental__header {
@@ -129,6 +135,11 @@
   margin-bottom: 35px;
 }
 
+.rental-contacts__inner {
+  display: flex;
+  align-items: center;
+}
+
 .rental-contacts__phone a {
   font: 500 16px/24px Roboto;
   color: #232833;
@@ -192,4 +203,251 @@
   text-decoration: none;
   color: #232833;
   background-color: #f1f1f1;
+}
+
+@media screen and (max-width: 1260px) {
+  .rental {
+    padding: 25px 32px 100px;
+  }
+
+  .rental-main__block {
+    align-items: flex-start;
+  }
+
+  .rental-main__img {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .rental-main__img-left {
+    display: flex;
+  }
+
+  .rental-main__left-block {
+    margin: 25px 10px 0 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .rental-steps__arrow {
+    display: none;
+  }
+
+  .rental-steps {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .rental-steps__block {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .rental-main__img-right {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .rental__header {
+    font: 700 21px/27px Roboto;
+    color: #232833;
+  }
+
+  .rental-main__right-main {
+    width: 322px;
+    height: 250px;
+  }
+
+  .rental-main__right-main img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .rental-main__right-rectangle {
+    width: 325px;
+    height: 251px;
+    top: 15px;
+    left: 15px;
+  }
+
+  .rental-main__right-rectangle img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .rental-main__contacts {
+    margin-left: 26px;
+  }
+
+  .rental-contacts__block-text_small {
+    font-size: 14px;
+  }
+
+  .rental-contacts__block-text {
+    font-size: 16px;
+  }
+
+  .rental-steps__block a {
+    margin-top: 14px;
+    padding: 4px 18px;
+    max-width: 158px;
+  }
+
+  .rental-list__item {
+    font-size: 14px;
+  }
+
+  .rental-list__text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .rental-contacts__info {
+    flex-direction: column;
+  }
+
+  .rental-contacts__block {
+    width: 100%;
+  }
+
+  .rental-contacts__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .rental-contacts__phone {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .rental-contacts__info {
+    flex-direction: column;
+  }
+
+  .rental-contacts__block {
+    width: 100%;
+  }
+
+  .rental-contacts__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .rental-contacts__phone {
+    margin-bottom: 10px;
+  }
+
+  .rental-main__block {
+    flex-direction: column;
+  }
+
+  .rental-list__scroll {
+    overflow: auto;
+  }
+
+  .rental-list__scroll::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .rental-list {
+    overflow-x: scroll;
+    min-width: 830px;
+    width: 100%;
+  }
+
+  .rental__header {
+    margin-bottom: 29px;
+  }
+
+  .rental-main__contacts {
+    margin-left: 0;
+  }
+
+  .rental-main__right-main {
+    width: 448px;
+    height: 345px;
+  }
+
+  .rental-main__right-main img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .rental-main__right-rectangle {
+    width: 449px;
+    height: 346px;
+    top: 20px;
+    left: 21px;
+  }
+
+  .rental-main__img {
+    margin-bottom: 20px;
+  }
+
+  .rental-contacts__info {
+    flex-direction: row;
+  }
+
+  .rental-contacts__block {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .rental {
+    padding: 26px 12px 50px;
+  }
+
+  .rental-main__right-main {
+    width: 322px;
+    height: 250px;
+  }
+
+  .rental-main__right-rectangle {
+    width: 325px;
+    height: 251px;
+    top: 15px;
+    left: 15px;
+  }
+
+  .rental-contacts__info {
+    flex-direction: column;
+  }
+
+  .rental-contacts__block {
+    width: 100%;
+  }
+
+  .rental-info hr {
+    margin: 0 0 15px;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .rental-steps__block {
+    margin-right: 0;
+  }
+
+  .rental-steps__block:first-child {
+    margin-right: 15px;
+  }
+
+  .rental-main__img-scroll {
+    overflow: auto;
+  }
+
+  .rental-main__img-scroll::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .rental-main__img {
+    max-width: 100%;
+  }
+
+  .rental-main__img-left {
+    min-width: 400px;
+  }
 }
